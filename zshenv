@@ -1,3 +1,3 @@
-f [ -f /usr/local/share/chruby/auto.sh ] ; then
+if [ -f /usr/local/share/chruby/auto.sh ] ; then
   source /usr/local/share/chruby/auto.sh
 fi

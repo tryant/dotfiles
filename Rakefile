@@ -34,7 +34,7 @@ task :install do
       link_file(file)
     end
   end
-  vundle_install
+  install_vundle
 end
 
 def replace_file(file)

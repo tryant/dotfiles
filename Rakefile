@@ -34,6 +34,7 @@ task :install do
       link_file(file)
     end
   end
+  install_vundle
 end
 
 def replace_file(file)
@@ -87,5 +88,14 @@ def install_oh_my_zsh
     else
       puts "skipping oh-my-zsh, you will need to change ~/.zshrc"
     end
+  end
+end
+
+def install_vundle
+  if File.exist?(File.join(ENV['HOME'], ".vim/bundle/vundle"))
+    puts "found ~/.vim/bundle/vundle"
+  else
+    puts "Installing vundle"
+    system %Q{git clone https://github.com/gmarik/vundle.git "$HOME/.vim/bundle/vundle"}
   end
 end

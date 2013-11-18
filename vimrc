@@ -20,12 +20,16 @@ if has("autocmd")
 	" Set File type to 'text' for files ending in .txt
 	autocmd BufNewFile,BufRead *.txt setfiletype text
 
+  " Set File type to 'markdown' for files ending in .md
+  autocmd BufNewFile, BufRead *.md set filetype markdown
+
 	" Enable soft-wrapping for text files
-	autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebrack nolist
+	autocmd FileType text,markdown,html,xhtml,eruby setlocal wrap linebreak nolist
 
 	" Put these in autocmd group, so that we can delete them easily
 	augroup vimrcEx
 	au!
+  
 
 	" For all text files set 'textwidth' to 72 characters.
 	autocmd FileType text setlocal textwidth=72

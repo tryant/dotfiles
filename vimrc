@@ -49,6 +49,9 @@ set expandtab
 " Always display the status line
 set laststatus=2
 
+" \ is the leader character
+let mapleader = ","
+
 " Use Ack instead of Grep when available
 if executable("ack")
   set grepprg=ack\ -H\ --nogroup\ --nocolor\ --ignore-dir=tmp\ --ignore-dir=coverage

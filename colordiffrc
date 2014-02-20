@@ -1,0 +1,8 @@
+banner=no
+color_patches=no
+
+plain=darkwhite
+newtext=darkgreen
+oldtext=darkred
+diffstuff=darkcyan
+cvsstuff=darkwhite

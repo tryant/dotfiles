@@ -12,6 +12,9 @@ let mapleader=','
 " Small Custom functions
 source ~/.vim/functions.vim
 
+"Bindings
+source ~/.vim/bindings.vim
+
 " Vim Configurations
 source ~/.vim/config.vim
 

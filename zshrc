@@ -1,9 +1,11 @@
 ZSH=$HOME/.oh-my-zsh
-#ZSH_THEME="rbates"
-DISABLE_AUTO_UPDATE="true"
-DISABLE_LS_COLORS="false"
 
-#plugins=(git bundler brew gem rbates)
+ZSH_THEME="tryan"
+
+DISABLE_AUTO_UPDATE="true"
+CASE_SENSITIVE="true"
+
+plugins=(git bundler gem tryan)
 
 export PATH="/usr/local/bin:$PATH"
 export EDITOR='vim'

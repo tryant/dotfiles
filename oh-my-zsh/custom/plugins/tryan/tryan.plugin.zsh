@@ -62,7 +62,7 @@ compdef _git gdc=git-diff
 
 alias gl='git log --notes'
 compdef _git gl=git-log
-alias gld='git log --pretty=decorate'
+alias gld='git log --decorate'
 compdef _git gld=git-log
 alias glf='git log --pretty=full'
 compdef _git glf=git-log

@@ -94,3 +94,7 @@ set nofoldenable
 
 " Nerd Commenter
 let NERDSpaceDelims=1
+
+" turbux
+let g:turbux_command_prefix = 'bundle exec' " default: (empty)
+let g:turbux_runner         = 'vim'

@@ -11,6 +11,9 @@ map <Leader>rw :%s/\<<C-r><C-w>\>/
 map <F9> O<Esc>
 map <F8> o<Esc>
 
+" map NERDtree shortcut
+map <C-n> :NERDTreeToggle<CR>
+
 " Run all specs
 map <Leader>rsa :call Send_to_Tmux("bundle exec rspec spec\n")<CR>
 

@@ -14,3 +14,6 @@ autocmd BufRead,BufNewFile *.h set filetype=c
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 autocmd BufRead,BufNewFile Guardfile set filetype=ruby
 autocmd FileType * call Tabstyle_auto()
+
+" Close vim if NERDTree only window open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

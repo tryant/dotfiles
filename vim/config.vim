@@ -6,7 +6,7 @@ endif
 set background=dark
 syntax on
 
-" colorscheme ir_black
+colorscheme ir_black
 
 " Tabs
 call Tabstyle_auto()

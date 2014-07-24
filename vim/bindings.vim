@@ -22,3 +22,5 @@ map <Leader>rsf :call Send_to_Tmux("bundle exec rspec spec/features\n")<CR>
 
 map <F5> :setlocal spell! spelllang=en_us<cr>
 imap <F5> <ESC> :setlocal spell! spelllang=en_us<cr>
+
+map <Leader>sas :w !sudo tee %<CR>

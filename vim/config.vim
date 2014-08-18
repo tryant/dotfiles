@@ -98,3 +98,6 @@ let NERDSpaceDelims=1
 " turbux
 let g:turbux_command_prefix = 'bundle exec' " default: (empty)
 let g:turbux_runner         = 'vim'
+
+" use ag in vim
+let g:agprg = 'ag --nogroup --nocolor --column'

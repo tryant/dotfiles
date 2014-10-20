@@ -124,5 +124,6 @@ compdef _git gsb=git-show-branch
 alias gsu='git submodule update --init --recursive'
 compdef _git gsu=git-submodule
 
+alias rc='bundle exec pry -r ./config/environment || rails console'
 # add plugin's bin directory to path
 export PATH="$(dirname $0)/bin:$PATH"

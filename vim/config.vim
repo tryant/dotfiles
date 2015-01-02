@@ -37,6 +37,10 @@ set smartcase
 set showcmd
 set showmode
 
+" Always show Status Line
+set laststatus=2
+
+
 hi StatusLine ctermfg=white
 hi StatusLineNC ctermfg=lightblue
 

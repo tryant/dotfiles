@@ -98,9 +98,9 @@ function! Tabstyle_4_spaces()
 endfunction
 
 function! Tabstyle_auto()
-	if (&ft == 'c') || (&ft == 'cpp') || (&tf == 'make') || (&ft == 'sh') || (&ft == 'awk')
+	if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'make') || (&ft == 'sh') || (&ft == 'awk')
 		call Tabstyle_tabs()
-  elseif (&ft == 'php') || (&ft == 'js')
+  elseif (&ft == 'php') || (&ft == 'javascript')
     call Tabstyle_4_spaces()
   else
 		call Tabstyle_2_spaces()

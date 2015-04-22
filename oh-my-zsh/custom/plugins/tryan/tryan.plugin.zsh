@@ -74,6 +74,8 @@ alias gls='gl --stat'
 compdef _git gls=git-log
 alias gcount='git shortlog -sn'
 compdef gcount=git
+alias glcm='gl --cherry-mark --oneline'
+compdef _git glcm=git-log
 
 alias gm='git merge'
 compdef _git gm=git-merge

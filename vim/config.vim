@@ -7,6 +7,9 @@ set background=dark
 syntax on
 
 colorscheme ir_black
+" colorscheme solarized
+" colorscheme gruvbox
+" colorscheme kolor
 
 " Tabs
 call Tabstyle_auto()
@@ -54,6 +57,7 @@ set statusline+=%h
 set statusline+=%y
 set statusline+=%r
 set statusline+=%m
+set statusline+=%c
 
 set statusline+=%#warningmsg#
 set statusline+=%{StatuslineTabWarning()}
@@ -62,6 +66,7 @@ set statusline+=%*
 set statusline+=#warningmsg#
 set statusline+=%{StatuslineTrailingSpaceWarning()}
 set statusline+=%*
+
 
 " Line Wrapping
 set nowrap

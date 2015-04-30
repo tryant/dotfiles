@@ -20,6 +20,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'rking/ag.vim'
+Bundle 'fatih/vim-go'
 
 " Color Schemes
 Bundle 'wesgibbs/vim-irblack'

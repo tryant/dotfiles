@@ -21,6 +21,7 @@ Bundle 'jgdavey/vim-turbux'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'rking/ag.vim'
 Bundle 'fatih/vim-go'
+Bundle 'rust-lang/rust.vim'
 
 " Color Schemes
 Bundle 'wesgibbs/vim-irblack'

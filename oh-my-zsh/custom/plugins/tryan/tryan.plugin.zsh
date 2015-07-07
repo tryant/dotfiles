@@ -59,6 +59,8 @@ alias gd='git diff'
 compdef _git gd=git-diff
 alias gdc='git diff --cached'
 compdef _git gdc=git-diff
+alias gdt='git diff-tree --no-commit-id --name-status -r'
+compdef _git gdt=git-diff-tree
 
 alias gl='git log --notes'
 compdef _git gl=git-log

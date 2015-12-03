@@ -9,7 +9,7 @@ DISABLE_AUTO_UPDATE="true"
 # Disable auto-setting of terminal title
 DISABLE_AUTO_TITLE="true"
 
-plugins=(git bundler gem tryan)
+plugins=(bundler gem tryan)
 
 # use vim as editor
 export PATH="/usr/local/bin:$PATH"

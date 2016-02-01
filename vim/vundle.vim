@@ -16,15 +16,24 @@ Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-fugitive'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'rking/ag.vim'
-Bundle 'fatih/vim-go'
-Bundle 'rust-lang/rust.vim'
+Bundle 'bling/vim-bufferline'
+" Bundle 'fatih/vim-go'
+" Bundle 'rust-lang/rust.vim'
 
 " Color Schemes
 Bundle 'wesgibbs/vim-irblack'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'zeis/vim-kolor'
-Bundle 'morhetz/gruvbox'
+" Bundle 'altercation/vim-colors-solarized'
+" Bundle 'zeis/vim-kolor'
+" Bundle 'morhetz/gruvbox'
+
+" Vim Powerline
+" Bundle 'vim-airline/vim-airline'
+
+" JavaScript, HTML
+Bundle 'pangloss/vim-javascript'
+Bundle 'othree/html5-syntax.vim'
+Bundle 'othree/html5.vim'
+Bundle 'kchmck/vim-coffee-script'

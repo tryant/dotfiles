@@ -4,12 +4,15 @@ if (&term !~ '^linux$')
 endif
 
 set background=dark
-syntax on
+syntax enable
 
 colorscheme ir_black
-" colorscheme solarized
 " colorscheme gruvbox
 " colorscheme kolor
+
+" solazired colorscheme
+" let g:solarized_termcolors=256
+" colorscheme solarized
 
 " Tabs
 call Tabstyle_auto()
@@ -43,30 +46,36 @@ set showmode
 " Always show Status Line
 set laststatus=2
 
-
 hi StatusLine ctermfg=white
 hi StatusLineNC ctermfg=lightblue
 
-set statusline=%f
+set statusline=%f   " tail of the filename
 
+" Display a warning if file encoding isn't utf-8
 set statusline+=%#warningmsg#
 set statusline+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''}
 set statusline+=%*
 
-set statusline+=%h
-set statusline+=%y
-set statusline+=%r
-set statusline+=%m
-set statusline+=%c
+set statusline+=%h  " help file flag
+set statusline+=%y  " filetype
+set statusline+=%r  " read only flag
+set statusline+=%m  " modified flag
 
+" Display a warning if &et is wrong, or we have mixed-indenting
 set statusline+=%#warningmsg#
 set statusline+=%{StatuslineTabWarning()}
 set statusline+=%*
 
-set statusline+=#warningmsg#
+" Display a warning if we have trailing whitespace
+set statusline+=%#warningmsg#
 set statusline+=%{StatuslineTrailingSpaceWarning()}
 set statusline+=%*
 
+set statusline+=%=    " left/right separator
+set statusline+=%{StatuslineCurrentHighlight()}\ \  " current hightlight
+set statusline+=%c    " cursor column
+set statusline+=%l/%L " cursor line/total lines
+set statusline+=\ %P  " precent through file
 
 " Line Wrapping
 set nowrap

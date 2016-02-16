@@ -118,7 +118,11 @@ let g:turbux_command_prefix = 'bundle exec' " default: (empty)
 let g:turbux_runner         = 'vim'
 
 " use ag in vim
-let g:agprg = 'ag --nogroup --nocolor --column'
+let g:ag_prg = 'ag --nogroup --nocolor --column'
 
 " for vim-go
-let g:go_disable_autoinstall = 0
+" let g:go_disable_autoinstall = 0
+
+" use silver searcher with CtrlP
+let g:ctrlp_user_command =  'ag %s -l --hidden --nocolor -g ""'
+let g:ctrlp_use_caching = 0

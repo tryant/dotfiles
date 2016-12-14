@@ -12,6 +12,8 @@
 	editor = vim
 [apply]
 	whitespace = nowarn
+[git-up "rebase"]
+  arguments = --preserve-merges
 [format]
 	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 [merge]
@@ -24,3 +26,5 @@
   autosetuprebase = always
 [push]
   default = tracking
+[pull]
+  rebase = true

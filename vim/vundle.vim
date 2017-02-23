@@ -38,3 +38,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'othree/html5-syntax.vim'
 Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'leafgarland/typescript-vim'
+
+" Elixir
+Bundle 'elixir-lang/vim-elixir'

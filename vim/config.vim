@@ -118,7 +118,12 @@ let g:turbux_command_prefix = 'bundle exec' " default: (empty)
 let g:turbux_runner         = 'vim'
 
 " use ag in vim
-let g:ag_prg = 'ag --nogroup --nocolor --column'
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Sapce>
 
 " for vim-go
 " let g:go_disable_autoinstall = 0

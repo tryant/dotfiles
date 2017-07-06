@@ -15,6 +15,7 @@ autocmd BufRead,BufNewFile *.go set filetype=go
 autocmd BufRead,BufNewFile *.rs set filetype=rust
 autocmd BufRead,BufNewFile *.js set filetype=javascript
 autocmd BufRead,BufNewFile *.es6 set filetype=javascript
+autocmd BufRead,BufNewFile *.py set filetype=python
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 autocmd BufRead,BufNewFile Guardfile set filetype=ruby
 autocmd FileType * call Tabstyle_auto()

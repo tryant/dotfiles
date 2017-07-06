@@ -97,11 +97,20 @@ function! Tabstyle_4_spaces()
   set expandtab
 endfunction
 
+function! Python_Tabstyle()
+  set tabstop=8
+  set shiftwidth=4
+  set softtabstop=4
+  set expandtab
+endfunction
+
 function! Tabstyle_auto()
 	if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'make') || (&ft == 'sh') || (&ft == 'awk')
 		call Tabstyle_tabs()
   elseif (&ft == 'php') || (&ft == 'go') || (&ft == 'rust')
     call Tabstyle_4_spaces()
+  elseif (&ft == 'python')
+    call Python_Tabstyle()
   else
 		call Tabstyle_2_spaces()
 	endif
